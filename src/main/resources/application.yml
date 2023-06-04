@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: ap
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+logging:
+  level:
+    org.springframework.security: DEBUG
+ 
+imgur: 
+  client: 
+    clientId: fe22b7f5b3b0150
+    clientSecret: 15e700f6d59a31f9a5d6198d65b4fe90de6a60ce
+    authorizeUrl: https://api.imgur.com/oauth2/authorize
+    accessTokenUrl: https://api.imgur.com/oauth2/token
+    uploadUrl: https://api.imgur.com/3/upload
+    albumId: WcBFabc
+    images: https://api.imgur.com/3/account/me/images
+    refreshToken: 2e51ceb8809858814d97764d589d9ad34f943dff
+    albumUrl: https://api.imgur.com/3/album
